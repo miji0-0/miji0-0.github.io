@@ -1,0 +1,32 @@
+Qleaf
+
+index.html (QLEAF)
+
+exported in QGIS with OpenStreetMap Base Map.
+
+JSONs can be located @ Data folder. 
+CSS stylesheets are @ the CSS folder
+
+Photos might not load in the pop up as it needs an absolute path to load. 
+
+--------------------------------------------------------------------------
+How to add IMG on popups
+---------------------------------------------------------------------------
+1. Create a new atribute field and name it html_exp. (if only if not yet existing)
+2. Use  <img src="C:/PATHTOFOLDER/>
+
+Example:
+<img src="C:/Users/Public/BulsuXplore_Mapbox/QGIS/QL_Mapbox/images/RoxasHall.jpg"/>
+<img src="C:/Users/Public/BulsuXplore_Mapbox/QGIS/QL_Mapbox/images/CSSP.jpg"/>
+<img src="C:/Users/Public/BulsuXplore_Mapbox/QGIS/QL_Mapbox/images/Federizo.jpg"/>
+
+or you can do this manually through JSON  file directly with 
+
+GeoJson format:
+-----------------------------------------------------------------------------
+{ "type": "Feature", "properties": { "id": 15.0, 
+"name": "Federizo Hall", 
+"category": "Academic", 
+"html_exp": "<img src=\"C:/Users/Public/BulsuXplore_Mapbox/QGIS/QL_Mapbox/images/Federizo.jpg\"/>" }, "geometry": { "type": "MultiPolygon", 
+"coordinates": [ [ [ [ 120.814582013413528, 14.857916579652674 ], [ 120.814686925915495, 14.85800284590009 ], [ 120.814492073769443, 14.858225181566844 ], [ 120.815028109861132, 14.858670510751043 ], [ 120.815272653026568, 14.85839415088598 ], [ 120.815355977327343, 14.858463740449686 ], [ 120.815038461979526, 14.858830975999183 ], [ 120.814310067028529, 14.858233489304864 ], [ 120.814582013413528, 14.857916579652674 ] ] ] ] } }
+-----------------------------------------------------------------------------
